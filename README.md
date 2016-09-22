@@ -1,10 +1,4 @@
 # vue-sui-demo
-> 线上访问地址 http://eteplus.github.io/vue-sui-demo
-
-> 如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！ ^_^
-
-> 对于那些发邮件给我的同学说声抱歉, 由于本人的邮箱忘记密码了，最近才找回, 如果遇到什么问题的，欢迎一起交流和学习！（2016-07-11）
-
 ---
 Vue很轻量，易定制，比较适合移动端，很喜欢Vue写组件的方式，
 所有用[VUE](http://cn.vuejs.org/) 和 [SUI-Mobile](http://m.sui.taobao.org/) 写了一个移动端demo，用来反馈vue的学习成果（禁用了SUI自带的路由，使用[Vue-router](https://github.com/vuejs/vue-router)）
