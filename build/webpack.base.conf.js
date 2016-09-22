@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'raw'
+        loader: 'vue-html'
       },
       {
         test: /\.sass/,
