@@ -15,11 +15,12 @@
     template: require('./index.html'),
     route: {
       data () {
-        return this.$http.get('tasks.json')
-                .then(({data: {code, message, data}}) => {
-                  this.$set('tasks', data)
-                })
+        return this.$http.get('tasks')
+          .then(({data: {code, message, data}}) => {
+            this.$set('tasks', data)
+          })
       }
+
     },
     ready () {
       $.init()
@@ -68,8 +69,9 @@
       Btn
     }
   }
+
 </script>
 
 <style lang="sass">
-  @import "./index.sass"
+    @import "./index.sass";
 </style>

@@ -52,11 +52,27 @@ app.use(hotMiddleware);
 var staticPath = path.posix.join(config.build.assetsPublicPath, config.build.assetsSubDirectory);
 app.use(staticPath, express.static('./static'));
 
+// mock
+var mockConf = require('../mock/config')
+  , dataTpl = {message: '获取成功！', code: 200, data: null};
+
+app.use(function (req, res, next) {
+  mockConf.map(function (val) {
+    if (new RegExp(val.reg).test(req.url)) {
+      var data = Mock.mock(val.data());
+
+      dataTpl.data = data.data || data;
+
+      return res.send(dataTpl);
+    }
+  });
+});
+
 
 module.exports = app.listen(port, function (err, b, c) {
   if (err) {
     console.log(err);
     return
   }
-  console.log('Listening at http://localhost:' + port + '\n')
+  console.log('Listening at http://localhost:' + port + '\n');
 });

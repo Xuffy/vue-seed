@@ -12,7 +12,7 @@ export default {
     }
   },
   ready () {
-    this.$http.get('banner.json')
+    this.$http.get('banner')
     .then(({data: {code, message, data}}) => {
       let imgs = []
       for (let i = 0; i < data.length; i++) {

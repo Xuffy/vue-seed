@@ -56,6 +56,7 @@ export default {
           '</div>'
         $(this.$el).find('.card-container').prepend(cardHTML)
         // 加载完毕需要重置
+        console.log($.pullToRefreshDone)
         $.pullToRefreshDone('.pull-to-refresh-content')
       }.bind(this), 1500)
     }

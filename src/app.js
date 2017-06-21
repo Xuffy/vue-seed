@@ -23,6 +23,7 @@ routerConfig(router)
 // Resource
 Vue.use(VueResource)
 
+// console.log(Vue.http.headers)
 Vue.http.options.root = process.env.NODE_ENV === 'development' ? 'src/assets/data' : '/vue-sui-demo/static/data'
 Vue.http.options.emulateJSON = true
 
