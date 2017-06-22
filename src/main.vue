@@ -14,9 +14,9 @@
 <script>
 import Bar from './components/Bar'
 import BarItem from './components/BarItem'
-// import {wxShareConfig} from './util/util'
 import $ from 'zepto'
 import wx from 'wx'
+// import {wxShareConfig} from './util/util'
 
 export default {
   ready () {

@@ -20,6 +20,7 @@ export default {
     })
   },
   unbind () {
+    console.log($.destroyPullToRefresh)
     $.destroyPullToRefresh($(this.el))
   }
 }

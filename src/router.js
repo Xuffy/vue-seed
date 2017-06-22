@@ -14,7 +14,7 @@ export default function (router) {
     },
     '/home': {
       component (resolve) {
-        require(['./views/home/index'], resolve)
+        require(['./views/home'], resolve)
       }
     },
     '/list': {
